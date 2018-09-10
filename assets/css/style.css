@@ -1,0 +1,386 @@
+body {
+    margin: 0;
+    padding: 0;
+    font: 15px/1.4 Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+}
+#inner {
+    overflow: hidden;
+}
+
+/*Global*/
+.container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*Header*/
+header {
+    color: #000;
+    height: 100%;
+    border-bottom: orange 3px solid;
+}
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px;
+    color: inherit;
+}
+header a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #494949; 
+    font-size: 19px;
+    font-weight: bold;
+}
+header #branding h1 a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000; 
+    font-size: 25px;
+    font-weight: bold;
+}
+header #branding {
+    float: left;
+    font-size: 15px;
+} 
+header nav {
+    float: right;
+    margin-top:30px; 
+}
+header a:hover {
+    color: #000;
+}
+/*Showcase*/
+#showcase {
+    background: linear-gradient(rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.6)), url('../images/homebg.jpg');
+    min-height: 100vh;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+#showcase h1 {
+    font-weight: bold;
+    font-size: 30px;
+    padding-top:20%; 
+}
+#showcase a {
+    color: #fff;
+    text-decoration: none;
+}
+/* About Us */
+#about {
+    width: 60%;
+    float: left;
+    padding: 10px 3px 10px 10px;
+    text-align: justify;
+    font-size: 20px;
+    color: #565656;
+}
+#about h2 {
+    border-bottom: .1px solid silver;
+    color: #000;
+}
+#programs {
+    width:30%;
+    line-height: 30px;
+    margin: 10px;
+    padding: 10px;
+    float: right;
+    text-align: center;
+    background: #242424;
+    font-size: 20px;
+    color: #565656;
+}
+#programs h2 {
+    border-bottom: .1px solid silver;
+    color: #fff;
+}
+#programs ul li {
+    list-style: none;
+}
+#programs ul li a {
+    font-size: 22px;
+}
+#programs ul li ul li {
+    list-style: none;
+}
+#services article {
+    width: 100%;   
+    overflow: hidden;
+    font-size: 20px;
+    line-height: 32px;
+    color: #565656;
+    border-bottom: 1px solid #505050;
+    padding: 20px;
+}
+#services h2 {
+    text-align: center;
+    font-size: 30px;
+}
+#services h3 {
+    color: #505050;
+}
+#services a {
+    text-decoration: none;
+}
+#services #acad {
+    background: lightblue;
+}
+#services #proj {
+    background: silver;
+}
+#services #gis {
+    background: lightblue;
+}
+#services article img {
+    width: 20%;
+    height: 10%;
+    border-radius: 50%;
+    float: left;
+    padding: 25px 0 10px 12%;
+}
+#services article div {
+    width: 60%;
+    float: right;
+}
+#newsletter {
+    background: #242424;
+    color: #ffffff;
+    min-height: 70px;
+    text-align: center;
+}
+#newsletter p{
+    text-align: center;
+}
+#newsletter input[type="text"], #newsletter input[type="email"] {
+    width: 30%;
+    border-radius: 5px;
+    height: 25px;
+    padding: 5px;
+    font-size: 18px;
+}
+#newsletter textarea {
+    width: 30%;
+    border-radius: 5px;
+    height: 35px;
+    padding: 5px;
+    font-size: 18px;
+    resize:none;
+}
+input[type="submit"] {
+    width: 15%;
+    padding: 5px;
+    background:lightblue;
+    border-radius:5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    background:black;
+    color:white;
+    padding: 20px;
+    font-size: 20px;
+}
+footer p{
+    margin: 0;
+    padding: 0;
+}
+.current {
+   color: gold; 
+}
+#acad_boxes {
+    width: 100%;
+    background: linear-gradient(rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.6)), url('../images/research.jpg') no-repeat;   
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+#acad_boxes h2 {
+    padding: 30px 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+#proj_boxes {
+    width: 100%;
+    background: linear-gradient(rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.6)), url('../images/plan.png') no-repeat;   
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+#proj_boxes h2 {
+    padding: 30px 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+#proj_boxes .box-text {
+    font-weight: bold;
+}
+#gis_boxes {
+    width: 100%;
+    background: linear-gradient(rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.6)), url('../images/gis.png') no-repeat;   
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+#gis_boxes h2 {
+    padding: 30px 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.box {
+    width: 25%;
+    height: 100px;
+    background-color: lightblue;
+    opacity: .9;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    float: left;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+.box-wraper {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    float: right;
+}
+.box-text {
+    width: 30%;
+    margin: 0 auto;
+    float: left;
+}
+.box-text p {
+    font-size: 18px;
+}
+.box:hover {
+    opacity: .5;
+}
+#form-package {
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    border: 1px solid #000;
+    text-align: center;
+    background: #505050;
+    font-size: 16px;
+}
+#form-package h2 {
+    color: #fff;
+}
+#form-package .form-field{
+    padding: 10px;
+}
+#form-package input[type="text"], #form-package input[type="email"] {
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+#form-package select {
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    header #branding {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header nav {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header nav li {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    #newsletter h1 {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    #about {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    #programs {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    #services article img {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+     #services article div {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    .box-wraper {
+        width: 100%;
+    }
+    .box-text {
+        width: 100%;
+    }
+    .box {
+        width: 35%;
+    }
+    header {
+        padding-bottom: 10px;
+    }
+    #about p {
+        width: 90%;
+    }
+    #programs ul {
+        width: 90%;
+    }
+    
+    #services {
+        text-align: center;
+    }
+    #services article ul li, #services article h3 {
+        width: 90%;
+    }
+    #services article img {
+        width: 30%;
+    }
+    #services article ul {
+        list-style: none;
+    }
+    #boxes .box img {
+        width: 30%;
+    }
+    #newsletter input[type="text"], #newsletter input[type="email"], #newsletter textarea {
+        width: 100%;
+    }
+    input[type="submit"] {
+        width: 50%;
+    }
+    #form-package {
+        width: 90%;
+        height: 90%;
+    }
+    #form-package select {
+        width: 70%
+    }
+}
